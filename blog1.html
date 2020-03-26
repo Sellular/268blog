@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Bloggy Blogger</title>
+		<link rel="stylesheet" href="style.css">
+    </head>	
+    <body>
+        <header>
+			<h1>Eric Sell's 268 Blog</h1>
+        </header>
+        <div class="entry">
+            <h2>
+                Responsive HTML | <a href="responsive/responsive.html">SAMPLE PAGE</a>
+            </h2>
+            <div class="date">February 17th, 2020</div>
+            <p>
+                One thing that has interested me since more and more mobile devices came on the market, is responsive layouts and how different websites implement it. This aspect of web programming is a necessary aspect of a webpage in today's world of technology. It can completely make or break a user's experience on a website and if done right can give the user a much better impression of the website.
+            </p>
+            <p>
+                As the years have progressed, it has become a necessary thing to learn. I would imagine that as this semester progresses we will learn a lot of these features in HTML and CSS that aid us in giving all users a great experience.
+            </p>
+            <p>
+                While looking around and reading different articles about responsive HTML and the utilities HTML and CSS provide, I came across <a href="https://internetingishard.com/html-and-css/responsive-design/" target="_blank">this article</a>, by <a href="https://internetingishard.com">internetingishard.com</a> that does a very good job at explaining in a more generic view how to implement certain, general aspects of responsive layouts.
+            </p>
+            <p>
+                The main thing that caught my eye about what they were doing was the @media tags in css and filtering out by different parameters, what screens are this size, is it in landscape or portrait, etc. Seeing this filled in some gaps in my knowledge immediately. Giving CSS different categories to apply the specified rules to depending on the window that the webpage was viewed through is really a great way to do it and makes a lot of sense.
+            </p>
+            <p>
+                At the top, I have linked a separate page that implements the simple example of changing the background color based on the width of the browser that views it. The sample code is on the linked website as well as below.
+            </p>
+            <div class="code">
+                @media only screen and (max-width: 400px){
+                    body{
+                        background-color: blue;
+                    }
+                }
+                
+                @media only screen and (min-width: 401px) and (max-width: 960px){
+                    body{
+                        background-color: red;
+                    }
+                }
+                
+                @media only screen and (min-width: 961px){
+                    body{
+                        background-color: green;
+                    }
+                }
+            </div>
+            <p>
+                This example in and of itself isn't too ground breaking, but it brings to light the filters that can be used to distinguish the layout. These different layouts are used to dynamically alter the webpage while changing the browser size. Not only does this allow for color changes like the example, but it gives the option for whole website layouts to change dynamically.
+            </p>
+        </div>
+    </body>
+</html>

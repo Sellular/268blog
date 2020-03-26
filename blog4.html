@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Bloggy Blogger</title>
+		<link rel="stylesheet" href="style.css">
+	</head>	
+	<body>
+		<header>
+			<h1>Eric Sell's 268 Blog</h1>
+		</header>
+        <h2>
+            MongoDB w/ Javascript
+        </h2>
+        <div class="date">March 8th, 2020</div>
+        <p>
+            Back in CS-260 we touched on a bit of MongoDB and it seemed like one of the more revolutionary database systems out there. It introduced document based storage and had a format very similar to javascript objects. However, in 260 we only used Java to interact with the database, so while managing the database was easier, not having to think about columns etc, we didn't get to see the amazing integration with javascript objects that MongoDB allows.
+        </p>
+        <p>
+            Javascript Object
+        </p>
+        <div class="code">
+            var obj = { 
+                name: "Eric Sell", 
+                year: "Senior"
+            };
+        </div>
+        <p>
+            MongoDB Document
+        </p>
+        <div class="code">
+            {
+                name: "Eric Sell",
+                year: "Senior"
+            }
+        </div>
+        <p>
+            Above is the object/document syntax for both javascript and mongodb. As you can see, they're basically the same except for the declaration of the javascript variable. This allows for MongoDB to accept native javascript objects as direct representations of MongoDB documents. Integration of this sort allows for much more seemless interaction between MongoDB and javascript, allowing for inserting and querying objects to not require lots of parsing and typecasting etc.
+        </p>
+        <p>
+            The little I have used MongoDB with javascript it has been much more intuitive than with other languages and I can't wait to learn more about javascript, NodeJS and other frameworks to expand my knowledge of this integration and what is possible with it.
+        </p>
+    </body>
+</html>

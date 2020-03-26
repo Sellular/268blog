@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Bloggy Blogger
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+			<h1>Eric Sell's 268 Blog</h1>
+        </header>
+        <div class="entry">
+            <h2>
+                Node JS
+            </h2>
+            <div class="date">March 1st, 2020</div>
+            <p>
+                NodeJS has been one of the things that I have fiddled off and on with throughout the last year or so. Everytime I pick it up I'm always learning something at least slightly different and it has (most of the time) been a great pleasure to work with. Since NodeJS is so giant and not a super streamlined thing to discuss with code examples or anything of the sort, I figured I would discuss a couple different ways to use NodeJS and npm.
+
+                To start, <a href="https://www.npmjs.com/">npmjs.com</a> is the npm main sight and is an essential part of working with Node. It provides documentation along with a search for any packages that are available for the Node Package Manager. One of the ones that I have used is the package for MongoDB, <a href="https://www.npmjs.com/package/mongoose">mongoose</a>. Mongoose has allowed me to manipulate a MongoDB database through NodeJS with a RESTful API implementation of a couple simple items that I've served for fun. 
+
+            </p>
+            <div class="code">
+                var Person = mongoose.model('Person', PersonSchema);
+                var alfred = new Person({
+                    name: 'Alfred'
+                });
+                alfred.save(function(err, person) {
+                    if(err) return console.error(err);
+                    console.log(person.name + " saved to database");
+                });
+            </div>
+            <p>
+                This cool code snippet allows you to take a schema of a datatype and easily create and insert a piece of data into a mongodb database painlessly.
+            </p>
+            <p>
+                npm has a lot more than just database interaction to offer and is limitless and open source so you can create your own packages as well, if you have the time and expertice using their modules format.
+            </p>
+            <p>
+                Being a person that loves backend to frontend integration a lot, NodeJS has been something that has really grabbed my attention recently and I can't wait to start discussing it more in class.
+            </p>
+        </div>
+    </body>
+</html>
